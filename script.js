@@ -11,23 +11,23 @@ class GitHubPortfolio {
             {
                 name: 'feature-creep',
                 displayName: 'Feature Creep',
-                description: 'A deck builder game created for a game jam',
+                description: 'A strategic deck-building game that satirizes video game development, where players manage resources and implement features while battling the real-world challenge of scope creep. Built for a game jam with React and TypeScript.',
                 pagesUrl: 'https://sh0tybumbati.github.io/feature-creep/',
-                tags: ['Game', 'JavaScript', 'Game Jam']
+                tags: ['Deck Builder', 'React', 'TypeScript', 'Game Jam']
             },
             {
                 name: 'life-smp-stats-tracker',
                 displayName: 'Life SMP Stats Tracker',
-                description: 'Statistics tracking for Life SMP Minecraft server',
+                description: 'A comprehensive statistics dashboard tracking player performance across nine seasons of the Life Series Minecraft challenge, featuring interactive rankings, career analytics, and data visualizations for the competitive gaming community.',
                 pagesUrl: 'https://sh0tybumbati.github.io/life-smp-stats-tracker/',
-                tags: ['Minecraft', 'Statistics', 'JavaScript']
+                tags: ['Data Viz', 'React', 'Minecraft', 'Analytics']
             },
             {
                 name: 'Anglish-Word-hoard',
                 displayName: 'Anglish Wordbook',
-                description: 'A linguistic resource for alternative English terminology',
+                description: 'An interactive digital dictionary exploring English words with Germanic origins, featuring advanced search, etymological tracking, and a neo-archaic design with Gothic typography that honors linguistic heritage.',
                 pagesUrl: 'https://sh0tybumbati.github.io/Anglish-Word-hoard/',
-                tags: ['Language', 'TypeScript', 'Dictionary']
+                tags: ['Linguistics', 'TypeScript', 'Etymology', 'React']
             }
         ];
 
