@@ -5,12 +5,38 @@ class GitHubPortfolio {
         this.filteredRepos = [];
         this.currentFilter = 'all';
         this.searchQuery = '';
-        
+
+        // Featured projects with GitHub Pages
+        this.featuredProjects = [
+            {
+                name: 'feature-creep',
+                displayName: 'Feature Creep',
+                description: 'A deck builder game created for a game jam',
+                pagesUrl: 'https://sh0tybumbati.github.io/feature-creep/',
+                tags: ['Game', 'JavaScript', 'Game Jam']
+            },
+            {
+                name: 'life-smp-stats-tracker',
+                displayName: 'Life SMP Stats Tracker',
+                description: 'Statistics tracking for Life SMP Minecraft server',
+                pagesUrl: 'https://sh0tybumbati.github.io/life-smp-stats-tracker/',
+                tags: ['Minecraft', 'Statistics', 'JavaScript']
+            },
+            {
+                name: 'Anglish-Word-hoard',
+                displayName: 'Anglish Wordbook',
+                description: 'A linguistic resource for alternative English terminology',
+                pagesUrl: 'https://sh0tybumbati.github.io/Anglish-Word-hoard/',
+                tags: ['Language', 'TypeScript', 'Dictionary']
+            }
+        ];
+
         this.init();
     }
     
     init() {
         this.bindEvents();
+        this.renderFeaturedProjects();
         this.loadRepositories();
     }
     
@@ -100,6 +126,33 @@ class GitHubPortfolio {
         this.renderRepositories();
     }
     
+    renderFeaturedProjects() {
+        const featuredContainer = document.getElementById('featuredProjects');
+        if (!featuredContainer) return;
+
+        featuredContainer.innerHTML = this.featuredProjects.map(project => `
+            <div class="featured-card">
+                <div class="featured-header">
+                    <h3 class="featured-title">${project.displayName}</h3>
+                    <div class="featured-tags">
+                        ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                </div>
+                <p class="featured-description">${project.description}</p>
+                <div class="featured-links">
+                    <a href="${project.pagesUrl}" target="_blank" class="featured-link primary">
+                        <i class="fas fa-globe"></i>
+                        View Live Site
+                    </a>
+                    <a href="https://github.com/${this.username}/${project.name}" target="_blank" class="featured-link secondary">
+                        <i class="fab fa-github"></i>
+                        View Code
+                    </a>
+                </div>
+            </div>
+        `).join('');
+    }
+
     renderRepositories() {
         const container = document.getElementById('reposGrid');
         const noResults = document.getElementById('noResults');
