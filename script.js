@@ -73,12 +73,13 @@ class GitHubPortfolio {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             
-            // Filter repos: only show ones with descriptions, not forks, and exclude the portfolio itself
+            // Filter repos: only show ones with descriptions, not forks, and exclude specific repos
+            const excludedRepos = ['Sh0tyCode', 'EnnasLab']; // Portfolio itself and personal projects
             this.repos = await response.json().then(repos => repos.filter(repo =>
                 repo.description && // Must have a description
                 repo.description.trim() !== '' && // Description must not be empty
                 !repo.fork && // Exclude forks
-                repo.name !== 'Sh0tyCode' // Exclude the portfolio itself
+                !excludedRepos.includes(repo.name) // Exclude specific repos
             ));
             this.filteredRepos = [...this.repos];
 
