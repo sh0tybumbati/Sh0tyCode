@@ -9,6 +9,13 @@ class GitHubPortfolio {
         // Featured projects with GitHub Pages
         this.featuredProjects = [
             {
+                name: 'silicon-tycoon',
+                displayName: 'Silicon Tycoon',
+                description: 'A realistic semiconductor design and manufacturing simulation game featuring visual die layout with PixiJS, process nodes from 180nm to 3nm, performance modeling, yield calculations, and four visual themes. Design custom CPUs/GPUs and manage fab production.',
+                pagesUrl: 'https://sh0tybumbati.github.io/silicon-tycoon/',
+                tags: ['Simulation', 'PixiJS', 'JavaScript', 'Game']
+            },
+            {
                 name: 'feature-creep',
                 displayName: 'Feature Creep',
                 description: 'A strategic deck-building game that satirizes video game development, where players manage resources and implement features while battling the real-world challenge of scope creep. Built for a game jam with React and TypeScript.',
