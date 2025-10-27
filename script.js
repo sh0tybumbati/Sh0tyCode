@@ -16,6 +16,13 @@ class GitHubPortfolio {
                 tags: ['Simulation', 'PixiJS', 'JavaScript', 'Game']
             },
             {
+                name: 'budget-tracker',
+                displayName: 'Budget Tracker',
+                description: 'A full-stack personal finance management application with expense tracking, budget planning, and financial analytics. Built with modern web technologies and deployed on Render with PostgreSQL database backend.',
+                pagesUrl: 'https://budget-tracker-wi9l.onrender.com/',
+                tags: ['Full-Stack', 'Finance', 'PostgreSQL', 'Web App']
+            },
+            {
                 name: 'feature-creep',
                 displayName: 'Feature Creep',
                 description: 'A strategic deck-building game that satirizes video game development, where players manage resources and implement features while battling the real-world challenge of scope creep. Built for a game jam with React and TypeScript.',
