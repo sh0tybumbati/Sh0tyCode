@@ -23,6 +23,13 @@ class GitHubPortfolio {
                 tags: ['Full-Stack', 'Finance', 'PostgreSQL', 'Web App']
             },
             {
+                name: 'Trivium',
+                displayName: 'Trivium',
+                description: 'A full-stack trivia game platform with real-time multiplayer capabilities, question categories, scoring systems, and leaderboards. Features modern UI/UX design and deployed on Render with live game sessions.',
+                pagesUrl: 'https://trivium-nightly.onrender.com/',
+                tags: ['Full-Stack', 'Multiplayer', 'Game', 'Real-Time']
+            },
+            {
                 name: 'feature-creep',
                 displayName: 'Feature Creep',
                 description: 'A strategic deck-building game that satirizes video game development, where players manage resources and implement features while battling the real-world challenge of scope creep. Built for a game jam with React and TypeScript.',
