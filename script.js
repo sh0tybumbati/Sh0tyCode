@@ -30,6 +30,13 @@ class GitHubPortfolio {
                 tags: ['Full-Stack', 'Multiplayer', 'Game', 'Real-Time']
             },
             {
+                name: 'Okibar',
+                displayName: 'OKibar',
+                description: 'A karaoke bar management system with YouTube API integration for searching and queueing songs. Features real-time queue management via Socket.io, dual display support for management and public views, and live singer tracking with React and Tailwind CSS.',
+                pagesUrl: 'https://okibar.onrender.com/',
+                tags: ['Full-Stack', 'Socket.io', 'YouTube API', 'Real-Time']
+            },
+            {
                 name: 'feature-creep',
                 displayName: 'Feature Creep',
                 description: 'A strategic deck-building game that satirizes video game development, where players manage resources and implement features while battling the real-world challenge of scope creep. Built for a game jam with React and TypeScript.',
