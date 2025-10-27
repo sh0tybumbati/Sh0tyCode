@@ -44,13 +44,6 @@ class GitHubPortfolio {
                 tags: ['Deck Builder', 'React', 'TypeScript', 'Game Jam']
             },
             {
-                name: 'life-smp-stats-tracker',
-                displayName: 'Life SMP Stats Tracker',
-                description: 'A comprehensive statistics dashboard tracking player performance across nine seasons of the Life Series Minecraft challenge, featuring interactive rankings, career analytics, and data visualizations for the competitive gaming community.',
-                pagesUrl: 'https://sh0tybumbati.github.io/life-smp-stats-tracker/',
-                tags: ['Data Viz', 'React', 'Minecraft', 'Analytics']
-            },
-            {
                 name: 'Anglish-Word-hoard',
                 displayName: 'Anglish Wordbook',
                 description: 'An interactive digital dictionary exploring English words with Germanic origins, featuring advanced search, etymological tracking, and a neo-archaic design with Gothic typography that honors linguistic heritage.',
